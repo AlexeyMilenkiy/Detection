@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <h1 class="headline">Image object detection</h1>
+  <app-dropzone (sendFile)="getFile($event)"></app-dropzone>
+  <div class="images-container">
+    <ng-container *ngFor="let item of files">
+      <app-object-file [item]="item"></app-object-file>
+    </ng-container>
+  </div>
+</div>

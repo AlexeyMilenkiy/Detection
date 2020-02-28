@@ -1,0 +1,28 @@
+<div class="container">
+  <div *ngIf="item.isShowProgressBar">
+    <span>{{ item.progress }}</span>
+    <mat-progress-bar
+      mode="determinate"
+      width="300px"
+      [value]="item.value"
+    ></mat-progress-bar>
+  </div>
+  <div class="result-container">
+    <img
+      *ngIf="!item.isShowProgressBar && item.imgLink"
+      [src]="item.imgLink"
+      height="350px"
+    />
+    <video
+      width="600px"
+      *ngIf="!item.isShowProgressBar && item.videoLink"
+      [src]="item.videoLink"
+      controls
+    ></video>
+    <div *ngIf="item.data" class="values-container">
+      <span *ngFor="let value of arrKeys">
+        {{ value | titlecase }} : {{ item.data[value] }}
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #18212a;
+  height: 100%;
+  width: 230px;
+  &__headline {
+    background: #4299ff;
+    padding: 20px;
+    margin: 0;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    color: gray;
+    padding: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.active {
+  color: white;
+  background: gray;
+}

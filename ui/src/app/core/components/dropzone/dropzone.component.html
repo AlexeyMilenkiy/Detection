@@ -1,0 +1,11 @@
+<div class="dropzone">
+  <span> Select video to search for objects</span>
+  <input
+    type="file"
+    name="file"
+    id="file"
+    class="ObjectDetection__input"
+    (change)="dropzoneHandler($event.target.files)"
+  />
+  <label for="file">Choose a file</label>
+</div>
