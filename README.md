@@ -3,6 +3,7 @@ It's app for recognition images and videos.
 
 ## Main stack
 The app uses Angular (frontend) and Python3 (backend). For frontend part you need NodeJs installed to run/install npm packages. To install, please go to [NodeJS](https://nodejs.org/en/). For backend part you need Python 3 version. To install, please go to [Python3](https://www.python.org/). And you need install **ffmpeg**
+
 for Mac
 ```
 brew install ffmpeg
@@ -13,7 +14,7 @@ sudo apt-get install ffmpeg
 ```
 This is necessary for correct video conversion
 
-And you need download models for detecting. After that put their in root directory
+And you need download models for detecting. After that put their in root directory.
 
 - **[ResNet50](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_weights_tf_dim_ordering_tf_kernels.h5)**
 
