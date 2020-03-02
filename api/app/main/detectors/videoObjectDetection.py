@@ -4,7 +4,6 @@ import math
 import time
 import os
 import ffmpeg
-import subprocess
 from app.config.socket import socketio
 
 execution_path = os.getcwd()
@@ -25,15 +24,6 @@ def load_model():
 
 
 load_model()
-
-
-# def get_length(filename):
-#     result = subprocess.run(["ffprobe", "-v", "error", "-show_entries",
-#                              "format=duration", "-of",
-#                              "default=noprint_wrappers=1:nokey=1", filename],
-#                             stdout=subprocess.PIPE,
-#                             stderr=subprocess.STDOUT)
-#     return float(result.stdout)
 
 
 def detection_video(file_name, file_id):
