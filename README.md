@@ -15,12 +15,12 @@ This is necessary for correct video conversion
 
 And you need download models for detecting. After that put their in root directory
 
--**[ResNet50](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_weights_tf_dim_ordering_tf_kernels.h5)**
+- **[ResNet50](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_weights_tf_dim_ordering_tf_kernels.h5)**
 
--**[YOLOv3](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/yolo.h5)**
+- **[YOLOv3](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/yolo.h5)**
 please change it name to **image-yolo.h5**
 
--**[YOLOv3](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/yolo.h5)**
+- **[YOLOv3](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/yolo.h5)**
 please change it name to **video-yolo.h5**
 
 ## Server part
@@ -29,7 +29,7 @@ please change it name to **video-yolo.h5**
 cd api/
 python3 -m venv ./venv
 source ./venv/bin/activate
-pip install -r requirements.txt 
+pip3 install -r requirements.txt 
 python3 main.py
 ```
 
