@@ -39,6 +39,6 @@ cd ui/
 npm install
 ng serve
 ```
-Navigate to[App](`http://localhost:4200/). The app will automatically reload if you change any of the source files.
+Navigate to [App](`http://localhost:4200/). The app will automatically reload if you change any of the source files.
 
 ![](demo.gif)
